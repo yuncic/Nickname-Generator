@@ -6,7 +6,7 @@
 ---
 
 ## 데모(배포 주소)
-- Netlify: (여기에 배포 링크 넣기)
+- Netlify: https://nickname-generator-two.vercel.app/
 
 ---
 
@@ -37,12 +37,20 @@
 
 ---
 
-## 실행 방법(로컬)
+## 폴더 구조
 
-이 프로젝트는 별도 빌드 없이 실행되는 정적 웹 프로젝트입니다.
-
-### 방법 1) VSCode Live Server 사용
-1. 레포 클론
-   ```bash
-   git clone https://github.com/yuncic/Nickname-Generator.git
-   cd Nickname-Generator
+Nickname-Generator/
+├─ index.html
+├─ styles/
+│  └─ style.css
+└─ src/
+   ├─ app.js
+   ├─ generator/
+   │  ├─ nicknameGenerator.js
+   │  ├─ syllable.js
+   │  └─ weights.js
+   ├─ data/
+   │  └─ bannedWords.js
+   └─ utils/
+      ├─ random.js
+      └─ clipboard.js
