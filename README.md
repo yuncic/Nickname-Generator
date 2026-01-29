@@ -37,20 +37,3 @@
 
 ---
 
-## 폴더 구조
-
-Nickname-Generator/
-├─ index.html
-├─ styles/
-│  └─ style.css
-└─ src/
-   ├─ app.js
-   ├─ generator/
-   │  ├─ nicknameGenerator.js
-   │  ├─ syllable.js
-   │  └─ weights.js
-   ├─ data/
-   │  └─ bannedWords.js
-   └─ utils/
-      ├─ random.js
-      └─ clipboard.js
