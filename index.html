@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>🛠️ 한글 닉네임 생성기</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <h1>한글 닉네임 생성기 (테토/에겐/밸런스)</h1>
+
+      <div class="card">
+        <div class="form-grid">
+          <div class="field">
+            <label for="count">뽑을 개수 (1~2000)</label>
+            <input id="count" type="number" min="1" max="2000" value="50" />
+          </div>
+
+          <div class="field">
+            <label for="style">느낌</label>
+            <select id="style">
+              <option>밸런스</option>
+              <option>테토력 뿜뿜</option>
+              <option>에겐력 뿜뿜</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="length">글자 수</label>
+            <select id="length">
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="btns">
+          <button class="primary" id="genBtn">닉네임 생성</button>
+          <button id="copyAllBtn">전체 복사</button>
+          <button id="copySelectedBtn" disabled>선택 복사(드래그)</button>
+        </div>
+
+        <div class="result">
+          <div class="field">
+            <label for="out">결과</label>
+            <textarea id="out"></textarea>
+          </div>
+
+          <div class="hint">
+            - 드래그로 일부 선택 후 복사 가능<br />
+            - 조건이 빡세면 요청보다 적게 나올 수 있음
+          </div>
+
+          <div class="status" id="status"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 엔트리 -->
+    <script type="module" src="./src/app.js"></script>
+  </body>
+</html>
